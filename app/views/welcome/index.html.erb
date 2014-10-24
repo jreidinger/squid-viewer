@@ -1,0 +1,7 @@
+<body>
+  <ul>
+    <% @objects.each do |object| -%>
+      <li> <%= link_to object.url, binary_path(id: "binary", url: object.url) %> </li>
+    <% end %> 
+  </ul>
+</body>
